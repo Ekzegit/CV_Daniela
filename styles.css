@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 body {
@@ -25,8 +25,8 @@ body {
 
 /* ----- Columna derecha (sidebar) ----- */
 .sidebar {
-    width: 30%;
-    background: #0d3359; /* azul oscuro */
+    width: 34%; /* ancho aumentado para que quepa el mail */
+    background: #0d3359;
     color: #fff;
     padding: 40px 30px;
 }
@@ -86,9 +86,17 @@ body {
         text-decoration: underline;
     }
 
+/* mostrar enlaces completos sin cortes */
+.sidebar ul li a {
+    white-space: nowrap; /* todo en una línea */
+    overflow: visible;
+    text-overflow: unset;
+    display: inline-block;
+}
+
 /* ----- Columna izquierda (contenido) ----- */
 .content {
-    width: 70%;
+    width: 66%; /* 100% - 34% de la sidebar */
     padding: 40px 50px;
 }
 
@@ -149,7 +157,8 @@ body {
         flex-direction: column;
     }
 
-    .sidebar, .content {
+    .sidebar,
+    .content {
         width: 100%;
     }
 
@@ -157,17 +166,3 @@ body {
         text-align: center;
     }
 }
-
-.sidebar a {
-    word-break: break-word;
-    display: inline-block;
-}
-
-.sidebar ul li a {
-    white-space: nowrap; /* Mantiene todo en una línea */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-    max-width: 100%;
-}
-

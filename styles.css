@@ -1,9 +1,9 @@
 /* styles.css */
 
-/* Establecer el tamaño de la página y márgenes para impresión */
+/* Para impresiÃ³n */
 @page {
     size: A4;
-    margin: 20mm; /* Ajuste los márgenes según sea necesario */
+    margin: 20mm;
 }
 
 body {
@@ -22,37 +22,39 @@ body {
     max-width: 800px;
     width: 100%;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    overflow: hidden;
-    padding: 20px;
-    page-break-before: always; /* Para que el contenido no se divida en varias páginas */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 40px auto;
 }
 
 .cv-header {
-    background: #34495e;
-    color: #333;
-    padding: 20px 15px;
+    background: #2c3e50;
+    color: white;
+    padding: 30px 20px;
     text-align: center;
+    border-radius: 10px 10px 0 0;
 }
 
 .profile-img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 4px solid #fff;
+    object-fit: cover;
     margin-bottom: 15px;
 }
 
 .name {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 600;
     margin: 10px 0 5px;
 }
 
 .title {
     font-size: 1rem;
     font-weight: 300;
+    line-height: 1.6;
 }
 
 .social-links {
@@ -61,13 +63,13 @@ body {
     margin: 15px 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
     .social-links li a {
-        color: #333;
+        color: white;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 500;
         transition: opacity 0.3s;
     }
 
@@ -75,39 +77,60 @@ body {
             opacity: 0.8;
         }
 
-main {
-    padding: 20px;
+h2 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
 }
 
-h2 {
-    font-size: 1.5rem;
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 20px 0 5px;
     color: #34495e;
-    margin-bottom: 10px;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 4px 0 12px;
+    line-height: 1.5;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 8px 0 16px;
+}
+
+li {
+    margin-bottom: 6px;
 }
 
 .skills-container {
     display: flex;
-    justify-content: center;
-    gap: 10px;
     flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .skill {
-    background: #34495e;
+    background: #2c3e50;
     color: #fff;
-    padding: 8px 12px;
-    border-radius: 20px;
+    padding: 6px 14px;
+    border-radius: 18px;
     font-size: 0.9rem;
 }
 
 footer {
-    background: #333;
+    background: #2c3e50;
     color: #fff;
     padding: 10px;
     font-size: 0.9rem;
     text-align: center;
+    border-radius: 0 0 10px 10px;
 }

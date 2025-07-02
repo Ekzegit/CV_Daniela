@@ -157,3 +157,8 @@ body {
         text-align: center;
     }
 }
+
+.sidebar a {
+    word-break: break-word;
+    display: inline-block;
+}

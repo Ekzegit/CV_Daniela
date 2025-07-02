@@ -162,3 +162,12 @@ body {
     word-break: break-word;
     display: inline-block;
 }
+
+.sidebar ul li a {
+    white-space: nowrap; /* Mantiene todo en una línea */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 100%;
+}
+

@@ -1,11 +1,12 @@
-/* styles.css */
+/* styles.css — versión optimizada */
 
-/* Para impresión */
+/* ---------- Ajustes de impresión ---------- */
 @page {
     size: A4;
     margin: 20mm;
 }
 
+/* ---------- Estilos globales ---------- */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -28,12 +29,13 @@ body {
     margin: 40px auto;
 }
 
+/* ---------- Encabezado ---------- */
 .cv-header {
-    background: #2c3e50;
-    color: white;
+    background: #34495e; /* azul/gris oscuro */
+    color: #fff; /* contraste alto */
     padding: 30px 20px;
     text-align: center;
-    border-radius: 10px 10px 0 0;
+    border-radius: 12px 12px 0 0;
 }
 
 .profile-img {
@@ -57,6 +59,7 @@ body {
     line-height: 1.6;
 }
 
+/* ---------- Enlaces sociales ---------- */
 .social-links {
     list-style: none;
     padding: 0;
@@ -67,7 +70,7 @@ body {
 }
 
     .social-links li a {
-        color: white;
+        color: #fff;
         text-decoration: none;
         font-weight: 500;
         transition: opacity 0.3s;
@@ -77,40 +80,42 @@ body {
             opacity: 0.8;
         }
 
+/* ---------- Títulos y secciones ---------- */
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem; /* más grande y visible */
     color: #2c3e50;
     margin-top: 40px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 5px;
+    margin-bottom: 14px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 6px;
 }
 
 h3 {
     font-size: 1.1rem;
     font-weight: 600;
-    margin: 20px 0 5px;
+    margin: 22px 0 6px;
     color: #34495e;
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* más “aire” entre bloques */
 }
 
 p {
-    margin: 4px 0 12px;
+    margin: 4px 0 14px;
     line-height: 1.5;
 }
 
 ul {
     padding-left: 20px;
-    margin: 8px 0 16px;
+    margin: 8px 0 18px;
 }
 
 li {
     margin-bottom: 6px;
 }
 
+/* ---------- Habilidades ---------- */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -126,11 +131,29 @@ li {
     font-size: 0.9rem;
 }
 
+/* ---------- Botón descargar PDF ---------- */
+.btn-descargar {
+    display: inline-block;
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 14px;
+    transition: background 0.3s;
+}
+
+    .btn-descargar:hover {
+        background: #1a252f;
+    }
+
+/* ---------- Pie de página ---------- */
 footer {
     background: #2c3e50;
     color: #fff;
     padding: 10px;
     font-size: 0.9rem;
     text-align: center;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 12px 12px;
 }

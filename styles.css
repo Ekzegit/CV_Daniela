@@ -157,3 +157,25 @@ footer {
     text-align: center;
     border-radius: 0 0 12px 12px;
 }
+
+/* Enlaces dentro del encabezado */
+.cv-header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    .cv-header a:hover {
+        text-decoration: underline;
+    }
+
+/* Enlaces en el resto del contenido */
+.cv-container a {
+    color: #2c3e50; /* gris oscuro */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    .cv-container a:hover {
+        text-decoration: underline;
+    }
